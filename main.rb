@@ -10,6 +10,17 @@ def menu
     print "Action: "
     choice = gets.chomp
 
+    case choice
+    when 'a'
+      coin_list = manager.coin_list
+      puts "Available Coins"
+      puts coin_list.join(", ").center(50, "-")
+      print "Coin: "
+      symbol = gets.chomp.upcase
+
+
+    end
+
     break unless choice != 'q'
   end
 
