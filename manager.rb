@@ -1,5 +1,8 @@
 require "uri"
 require "net/http"
+require "json"
+require "./coin"
+
 
 class Manager
   @@repo = {}
@@ -9,6 +12,10 @@ class Manager
 
   def initialize_repo
     response = web_scrap
+    json = JSON.parse(response)
+    for symbol,values in json
+      coin = Coin.new(symbol, values['USD'], values['EUR'])
+    end
   end
 
   def web_scrap
