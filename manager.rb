@@ -29,4 +29,9 @@ class Manager
     @@repo.keys
   end
 
+  def calculate(amount, symbol, to)
+    coin = @@repo[symbol]
+    amount*coin.send(to.to.sym)
+  end
+
 end
