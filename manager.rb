@@ -15,6 +15,7 @@ class Manager
     json = JSON.parse(response)
     for symbol,values in json
       coin = Coin.new(symbol, values['USD'], values['EUR'])
+      @@repo[symbol] = coin
     end
   end
 
