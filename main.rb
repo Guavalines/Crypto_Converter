@@ -21,7 +21,9 @@ def menu
       amount = gets.chomp.to_i
 
       if coin_list.include? symbol
+        result = manager.calculate(amount, symbol, "USD")
 
+        puts "#{amount} #{symbol} = #{result} USD".center(50, "-")
       else
         puts "#{symbol} is not available.".center(50, "*")
       end
