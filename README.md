@@ -13,3 +13,4 @@ Menu Options: Users are presented with menu options to choose between converting
 - Clean Output: The program provides well-formatted output, displaying the conversion result and relevant information in a visually pleasing manner.
 
 ## Tools
+![Ruby](https://img.shields.io/badge/Ruby-CC342D?style=for-the-badge&logo=ruby&logoColor=white) 3.0.3p157 (2021-11-24 revision 3fb7d2cadc) [x86_64-linux]
