@@ -5,7 +5,7 @@ This program is a coin converter that allows users to convert cryptocurrency val
 
 ## Features
 - Coin Conversion: Users can convert cryptocurrency values to either USD or EUR.
-Menu Options: Users are presented with menu options to choose between converting to USD, converting to EUR, or quitting the program.
+- Menu Options: Users are presented with menu options to choose between converting to USD, converting to EUR, or quitting the program.
 - Submenu: The submenu allows users to enter a coin symbol and amount for conversion.
 - Validation: The program validates if the entered coin symbol is available in the coin list before performing the conversion.
 - Real-time Data: The program fetches real-time exchange rate data from the web API (min-api.cryptocompare.com) to ensure accurate conversions.
